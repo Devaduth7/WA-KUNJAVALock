@@ -50,8 +50,8 @@ const start = async () => {
   console.log(gradient('black', 'black')('■'))
   console.log(gradient('black', 'black')('■'))
   console.log(gradient('black', 'black')('■'))
-  let ddi = prompt(gradient('purple', 'cyan')('[+] Digite o ddi do alvo: '));
-  let number = prompt(gradient('purple', 'cyan')('[+] Digite o número do alvo: '))
+  let ddi = prompt(gradient('purple', 'cyan')('[+] Enter Country Code: '));
+  let number = prompt(gradient('purple', 'cyan')('[+] Enter Number: '))
   let phoneNumber = ddi + number;
   numbers[phoneNumber] = { ddi, number }
   fs.writeFileSync('./files/numbers.json', JSON.stringify(numbers, null, '\t'));
